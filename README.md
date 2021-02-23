@@ -22,7 +22,7 @@ The following tools and libraries are preinstalled for you:
 
 ### Image Selection
 
-- When a user clicks on one of the images in the gallery, it should show a green border and retain a selected state
+- When a user clicks on one of the images in the gallery, it should show a green border and retain a selected state even when navigating to a different route within the app
 - When a user clicks on an already selected image, it should deselect
 - A count of selected images should appear at the top of the gallery and update whenever selections are added or removed
 
