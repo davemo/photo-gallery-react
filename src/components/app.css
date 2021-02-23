@@ -1,0 +1,12 @@
+header {
+  grid-column: 1 / span 6;
+  grid-row: 1;
+  border-bottom: 3px solid gray;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
