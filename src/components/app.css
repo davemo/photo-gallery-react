@@ -5,8 +5,95 @@ header {
 }
 
 .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.searchField {
+  display: flex;
+  padding: 5px 15px;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.searchInput {
+  border: none;
+  margin-left: 10px;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+.searchClear {
+  margin-left: 8px;
+  background: none;
+  border: none;
+}
+
+.searchClear:hover {
+  border-radius: 25px;
+  background-color: rgb(232, 232, 232);
+  cursor: pointer;
+}
+
+.imageGrid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+  padding: 1.5rem; 
+}
+
+.polaroid {
+  padding: 20px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px hsla(0, 0%, 0%,0.2);
+}
+
+.polaroid:hover {
+  box-shadow: 0 5px 15px hsla(0, 0%, 0%,0.2);
+  cursor: pointer;
+}
+
+.selected {
+  border-color: rgb(123, 219, 123);
+  box-shadow: 0 5px 15px hsla(120, 57.1%, 67.1%, 0.5);
+}
+
+.selectedChip {
+  padding: 5px 18px;
+  margin-top: 20px;
+  border-radius: 20px;
+  background-color: rgb(192, 255, 192);
+  color: rgb(11, 111, 11);
+  display: flex;
+  align-items: center;
+}
+
+.selectionClear {
+  margin-left: 8px;
+  margin-top: 2px;
+  background: none;
+  border: none;
+  border-radius: 25px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selectionClear:hover {
+  cursor: pointer;
 }
